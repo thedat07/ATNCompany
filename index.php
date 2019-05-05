@@ -60,15 +60,15 @@
            	<form action="handling.php" method="post" enctype="MULTIPLE/form-data">
              	<div class="form-group">
                	<label for="email">Full Name:</label>
-               	<input type="text" name="fullname" class="form-control">
+               	<input type="text" name="fullname" class="form-control" placeholder="Add full name">
             	</div>
              	<div class="form-group">
                	<label for="pwd">Email:</label>
-              	<td><input type="text" name="email" class="form-control"></td>
+              	<td><input type="text" name="email" class="form-control" placeholder="Add email"></td>
               </div>
              	<div class="form-group">
                	<label for="pwd">Address:</label>
-               	<td><input type="text" name="address" class="form-control"></td>
+               	<td><input type="text" name="address" class="form-control" placeholder="Add address"></td>
              	</div>
               <input type="submit" class="btn btn btn-success" name="them" id="them" value="Add">
             </form>
@@ -89,7 +89,7 @@
 	      		<div class="panel-body">                             
 					    <table class="table table-striped table-hover table-bordered">
   		          <thead>
-  		            <tr>
+  		            <tr class="danger">
   		              <th>Full Name</th>
   		              <th>Email</th>
   		              <th>Address</th>
