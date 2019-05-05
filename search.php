@@ -91,7 +91,7 @@
                   $search=$_GET['Search'];
                   require_once('./dbconnector.php');
                   $cn = new DBConnector();
-                  $sql="Select * from student1 where fullname like '%$search%'";
+                  $sql="Select * from EMPLOYEES  where fullname like '%$search%'";
                   $rows = $cn->runQuery($sql);
                   foreach ($rows as $r) {
                   ?>        
