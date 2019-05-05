@@ -56,7 +56,7 @@
           require_once('./dbconnector.php');
           $cn = new DBConnector();
           $id=$_GET['id'];
-          $sql="Select * from student1 where id = $id";  
+          $sql="Select * from employees where id = $id";  
           $rows = $cn->runQuery($sql);                       
           foreach ($rows as $r) 
           {
