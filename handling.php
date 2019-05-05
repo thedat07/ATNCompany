@@ -5,7 +5,7 @@
     $fullname=$_POST['fullname'];
     $email=$_POST['email'];
     $address=$_POST['address'];
-    $sql="Insert Into EMPLOYEES (fullname, email, address) values('".$fullname."','".$email."','".$address."')";
+    $sql="Insert Into employees (fullname, email, address) values('".$fullname."','".$email."','".$address."')";
     $cn = new DBConnector();
     $return = $cn->execStatement($sql);
     header('location:index.php');
@@ -14,13 +14,13 @@
     $fullname=$_POST['fullname'];
     $email=$_POST['email'];
     $address=$_POST['address'];
-    $sql = "UPDATE EMPLOYEES SET fullname = '".$fullname."', email = '".$email."', address = '".$address."' WHERE id = $id"; 
+    $sql = "UPDATE employees SET fullname = '".$fullname."', email = '".$email."', address = '".$address."' WHERE id = $id"; 
     $cn = new DBConnector();
     $return = $cn->execStatement($sql);
     header('location:index.php');   
     }else{
     $id=$_GET['id'];
-    $sql="DELETE FROM EMPLOYEES WHERE id = $id";
+    $sql="DELETE FROM employees WHERE id = $id";
     $cn = new DBConnector();
     $return = $cn->execStatement($sql);    
     header('location:index.php'); 
