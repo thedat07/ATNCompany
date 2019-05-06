@@ -70,20 +70,18 @@
               <input type="submit" class="btn btn btn-success" name="them" id="them" value="Add">
             </form>
           </div>
-          <div class="panel-heading">Search</div>
-          <div class="panel-body">
-            <form class="form-inline md-form form-sm mt-0" action="./search.php">
-              <input class="form-control form-control-sm ml-3 w-75" type="text" placeholder="Search name" aria-label="Search name" id="search" name="Search">
-              <button class="w3-btn w3-blue w3-round-xxlarge"><span class="glyphicon glyphicon-search"></span></button>
-            </form>  
-          </div>
          </div>
       </div>
 
       <div class="col-sm-9">
           <div class="panel panel-primary">
             <div class="panel-heading">Staff management</div>
-            <div class="panel-body">                           
+            <div class="panel-body">
+            <form class="form-inline md-form form-sm mt-0" action="./search.php">
+              <input class="form-control form-control-sm ml-3 w-75" type="text" placeholder="Search name" aria-label="Search name" id="search" name="Search">
+              <button class="w3-btn w3-blue w3-round-xxlarge"><span class="glyphicon glyphicon-search"></span></button>
+            </form>
+            &nbsp;                             
               <table class="table table-striped table-hover table-bordered">
                 <thead>
                   <tr class="danger">
